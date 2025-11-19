@@ -1,124 +1,415 @@
-<h1 align="center">👋 Hi, I'm Angie Alvarez</h1>
-<h3 align="center">Quality Assurance Engineer | Manual Testing | API Testing | Mobile QA</h3>
-
-<p align="center">
-  I'm a Junior QA Engineer focused on software quality, structured testing, and continuous learning.  
-  Here you can find my main QA projects, including manual testing, API validation, mobile testing, SQL, and documentation work.
-</p>
-
+---
+layout: none
 ---
 
-# 🧪 Project 1 — SauceDemo: Functional Testing (E-commerce)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Angie Alvarez – QA Portfolio</title>
+  <style>
+    :root {
+      --bg: #f5faf8;
+      --card: #ffffff;
+      --accent: #46b7a5;
+      --accent-soft: #e0f4ef;
+      --text-main: #202124;
+      --text-muted: #5f6368;
+      --border: #dde5e9;
+      --tag: #f1f3f4;
+    }
 
-### ✍️ Description  
-Functional end-to-end testing of the SauceDemo e-commerce platform.  
-I designed 10+ test cases covering login, product browsing, cart behavior, checkout, and logout.  
-All tests were executed manually, documenting results, findings, and UX/security improvement opportunities.
+    * {
+      box-sizing: border-box;
+    }
 
-### 🛠 Skills  
-- Test case design  
-- Manual test execution  
-- Bug reporting  
-- Notion documentation  
-- Functional analysis  
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #e3f7f2 0, #f5faf8 35%, #ffffff 100%);
+      color: var(--text-main);
+    }
 
----
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
 
-# 🖥️ Project 2 — Urban Routes: Regression Testing
+    a:hover {
+      text-decoration: underline;
+    }
 
-### ✍️ Description  
-Execution of regression tests to validate the stability of existing functionalities in a ride-sharing web app.  
-Tested route creation, price calculations, estimated time, and various destination scenarios.
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
 
-### 🛠 Skills  
-- Regression testing  
-- Exploratory testing  
-- Calculation validation  
-- Chrome DevTools  
+    /* HEADER / HERO */
 
----
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 24px 32px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.04);
+      margin-bottom: 32px;
+    }
 
-# 🧩 Project 3 — Urban Routes: Test Design (Carpool Feature)
+    .hero-photo {
+      flex: 0 0 180px;
+      display: flex;
+      justify-content: center;
+    }
 
-### ✍️ Description  
-Structured test design for the “Carpool / Share Ride” feature.  
-Included mind maps, flow diagrams, requirement analysis, test case creation, and definition of acceptance criteria.
+    .hero-photo img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent-soft);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
 
-### 🛠 Skills  
-- Mind maps (XMind / Miro)  
-- Flow diagrams  
-- Functional analysis  
-- Test case design  
+    .hero-info {
+      flex: 1;
+      min-width: 260px;
+    }
 
----
+    .hero-name {
+      font-size: 2.1rem;
+      margin: 0 0 4px;
+    }
 
-# 🚗 Project 4 — Urban Routes: Carpool Testing (Multi-browser)
+    .hero-role {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin: 0 0 12px;
+    }
 
-### ✍️ Description  
-Validation of critical functionalities in the "Share Ride" module across multiple browsers (Chrome, Firefox, Edge).  
-Assessed compatibility, UI behavior, and consistency of results.
+    .hero-summary {
+      font-size: 0.98rem;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
 
-### 🛠 Skills  
-- Cross-browser testing  
-- Exploratory testing  
-- Evidence screenshots  
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
----
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid var(--accent);
+      background: #ffffff;
+      color: var(--accent);
+      cursor: pointer;
+      transition: all 0.15s ease-out;
+    }
 
-# 🔗 Project 5 — Urban.Grocers: API Testing (REST)
+    .btn.primary {
+      background: var(--accent);
+      color: #ffffff;
+    }
 
-### ✍️ Description  
-API testing of REST endpoints using Postman.  
-Validated status codes, JSON/XML structure, response times, error handling, and unexpected behaviors.  
-Documented defects and results in a structured bug report.
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.06);
+      text-decoration: none;
+    }
 
-### 🛠 Skills  
-- API testing  
-- Postman  
-- JSON / XML validation  
-- Assertions  
-- Bug reporting  
+    /* LAYOUT */
 
----
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+      gap: 24px;
+    }
 
-# 📱 Project 6 — Urban Lunch: Mobile QA (Android)
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
 
-### ✍️ Description  
-Functional and usability testing on an Android food-delivery app.  
-Executed tests on both emulator and physical device.  
-Validated navigation, order flow, visual components, and behavior across different screen sizes.
+    /* CARDS */
 
-### 🛠 Skills  
-- Mobile QA  
-- Android Studio  
-- Usability testing  
-- Screenshots & recording evidence  
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      padding: 20px 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.03);
+    }
 
----
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
 
-# 📊 Project 7 — Taxi App: Logs & Database Testing (SQL)
+    .card p {
+      font-size: 0.96rem;
+      line-height: 1.6;
+      margin-top: 4px;
+      margin-bottom: 6px;
+    }
 
-### ✍️ Description  
-Data consistency validation using SQL queries.  
-Analyzed backend logs, identified errors, verified data integrity, and used ER diagrams to understand relationships between database tables.
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
 
-### 🛠 Skills  
-- SQL  
-- Log analysis  
-- ER diagrams  
-- Debugging  
+    .tags {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
 
----
+    .tag {
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--tag);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
 
-# 🛠 Tech Stack
+    .projects-list h3 {
+      margin-top: 0;
+      font-size: 1.02rem;
+      margin-bottom: 4px;
+    }
 
-**Tools:**  
-Postman · Jira · GitHub · Chrome DevTools · Android Studio · MySQL · Draw.io · Notion
+    .projects-list small {
+      color: var(--text-muted);
+      font-size: 0.82rem;
+    }
 
-**Testing:**  
-Manual Testing · Regression · Functional Analysis · API Testing · Mobile Testing · Cross-browser Testing
+    ul {
+      padding-left: 18px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
 
----
+    li {
+      margin-bottom: 2px;
+    }
 
-### 💚 “Building quality, one test at a time.”  
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-photo">
+        <img src="https://avatars.githubusercontent.com/u/217429744?v=4" alt="Angie Alvarez portrait">
+      </div>
+      <div class="hero-info">
+        <h1 class="hero-name">Hi, I'm Angie Alvarez 👋</h1>
+        <p class="hero-role">Junior QA Engineer · Manual Testing · API Testing · Mobile QA</p>
+        <p class="hero-summary">
+          I’m a bilingual QA professional focused on software quality, structured testing and continuous learning.
+          On this page you can explore the main projects where I’ve practiced manual testing, API validation, mobile testing,
+          SQL and documentation.
+        </p>
+        <div class="hero-links">
+          <a class="btn primary" href="https://www.linkedin.com/in/angiedalvarez" target="_blank">LinkedIn</a>
+          <a class="btn" href="https://github.com/angiedalvarez" target="_blank">GitHub</a>
+          <a class="btn" href="mailto:angieaus28@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="layout">
+      <!-- LEFT: PROJECTS -->
+      <main>
+        <h2 class="section-title">Portfolio</h2>
+
+        <!-- Project 1 -->
+        <article class="card">
+          <span class="pill">Project 1 – E-commerce Functional Testing</span>
+          <h2>SauceDemo · Functional Testing (Web)</h2>
+          <p>
+            End-to-end manual testing of the SauceDemo e-commerce platform.
+            I designed more than 10 test cases covering login, product browsing, cart behavior, checkout and logout.
+            All tests were executed manually, documenting results, findings and UX/security improvement opportunities.
+          </p>
+          <div class="tags">
+            <span class="tag">Test case design</span>
+            <span class="tag">Manual execution</span>
+            <span class="tag">Bug reporting</span>
+            <span class="tag">Notion docs</span>
+            <span class="tag">Functional analysis</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <span class="pill">Project 2 – Regression</span>
+          <h2>Urban Routes · Regression Testing</h2>
+          <p>
+            Execution of regression tests to check that existing transport features stayed stable after changes.
+            I verified route creation, price calculation, travel time estimates and different destination scenarios.
+          </p>
+          <div class="tags">
+            <span class="tag">Regression testing</span>
+            <span class="tag">Exploratory testing</span>
+            <span class="tag">Business rules</span>
+            <span class="tag">Browser DevTools</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card">
+          <span class="pill">Project 3 – Test Design</span>
+          <h2>Urban Routes · Carpool Feature – Test Design</h2>
+          <p>
+            Structured design of tests for the “Car sharing” feature.
+            I created a mind map, flow diagrams, test cases and acceptance criteria to cover main and edge scenarios.
+          </p>
+          <div class="tags">
+            <span class="tag">Mind maps</span>
+            <span class="tag">Flow diagrams</span>
+            <span class="tag">Requirements analysis</span>
+            <span class="tag">Test design</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="card">
+          <span class="pill">Project 4 – Cross-Browser</span>
+          <h2>Urban Routes · Carpool – Cross-Browser Testing</h2>
+          <p>
+            Validation of critical “Car sharing” flows in multiple browsers (Chrome, Firefox, Edge).
+            I compared visual behavior, interactions and results to ensure a consistent experience.
+          </p>
+          <div class="tags">
+            <span class="tag">Cross-browser testing</span>
+            <span class="tag">Exploratory testing</span>
+            <span class="tag">Visual checks</span>
+            <span class="tag">Evidence capture</span>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="card">
+          <span class="pill">Project 5 – API</span>
+          <h2>Urban.Grocers · REST API Testing</h2>
+          <p>
+            Manual API testing using Postman for the Urban.Grocers project.
+            I validated response codes, JSON/XML structure, error handling and non-happy paths, documenting defects
+            and observations in a final report.
+          </p>
+          <div class="tags">
+            <span class="tag">API testing</span>
+            <span class="tag">Postman</span>
+            <span class="tag">JSON / XML</span>
+            <span class="tag">Negative scenarios</span>
+            <span class="tag">Bug reporting</span>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="card">
+          <span class="pill">Project 6 – Mobile QA</span>
+          <h2>Urban Lunch · Android Mobile Testing</h2>
+          <p>
+            Functional and usability testing of an Android food-ordering app using both an emulator and a physical device.
+            I tested navigation, ordering flows, response times and visual behavior on different screen sizes.
+          </p>
+          <div class="tags">
+            <span class="tag">Mobile QA</span>
+            <span class="tag">Android Studio</span>
+            <span class="tag">Usability testing</span>
+            <span class="tag">Screenshots & recordings</span>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="card">
+          <span class="pill">Project 7 – Data & Logs</span>
+          <h2>Taxi App · Logs and Database (SQL)</h2>
+          <p>
+            Data consistency checks using SQL queries and server logs.
+            I reviewed errors, verified that information in the database matched the UI and used ER diagrams
+            to understand relations between tables.
+          </p>
+          <div class="tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Log analysis</span>
+            <span class="tag">ER diagrams</span>
+            <span class="tag">Debugging mindset</span>
+          </div>
+        </article>
+      </main>
+
+      <!-- RIGHT: ABOUT & SKILLS -->
+      <aside>
+        <section class="card">
+          <h2>About me</h2>
+          <p>
+            I’m transitioning into QA from a customer-facing background, which helps me keep the user in mind
+            when I test. I enjoy understanding how things work, breaking flows in a safe way and leaving
+            clear documentation for the team.
+          </p>
+          <p>
+            Right now I’m focused on developing strong foundations in manual testing, test design, API testing and
+            mobile QA, while I gradually move into automation.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Tech & Tools</h2>
+          <div class="tags">
+            <span class="tag">Postman</span>
+            <span class="tag">Android Studio</span>
+            <span class="tag">Chrome DevTools</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Notion</span>
+            <span class="tag">Miro / XMind</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Testing Skills</h2>
+          <ul>
+            <li>Designing clear, structured test cases</li>
+            <li>Manual execution with detailed evidence</li>
+            <li>Functional and UI testing for web & mobile</li>
+            <li>Basic API testing with Postman</li>
+            <li>Regression and exploratory testing</li>
+            <li>Writing concise bug reports</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
 
